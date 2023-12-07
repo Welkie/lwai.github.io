@@ -225,12 +225,12 @@
 
                         // Thay đổi động tác dựa trên lớp được dự đoán
                         if (predictedClassName === name2 && elapsedTime === waitTime) {
-                            imageElement.src = `./image/${name1.toLowerCase()}.png`;
+                            imageElement.src = `./image/${name2.toLowerCase()}.png`;
                             found2 = true;
                             elapsedTime += 1000;
                         }
                         else if (predictedClassName === name2) {
-                            imageElement.src = `./image/${name1.toLowerCase()}.png`;
+                            imageElement.src = `./image/${name2.toLowerCase()}.png`;
                             resultMessage.innerText = 'Hãy giữ động tác trong khoảng 5 giây!';
                             elapsedTime += 100;
                         }
@@ -246,7 +246,7 @@
                         elapsedTime += 50;
                         resultContainer.style.backgroundColor = '#008080'; // Màu nền xanh dương đậm
                         resultMessage.innerText = 'Chính xác! Đây là hành động cúi đầu';
-                        imageElement.src = `./image/${name1.toLowerCase()}.png`;
+                        imageElement.src = `./image/${name2.toLowerCase()}.png`;
                         if (elapsedTime >= 11000) {
                             elapsedTime = 0;
                         }
