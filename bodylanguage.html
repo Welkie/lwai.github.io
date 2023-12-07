@@ -283,16 +283,16 @@
                         }
                     }
                     else {
-                        imageElement.src = `./image/${name4.toLowerCase()}.png`;
+                        imageElement.src = './image/V.png';
 
                         // Thay đổi hình ảnh dựa trên lớp được dự đoán
                         if (predictedClassName === name4 && elapsedTime === waitTime) {
-                            imageElement.src = `./image/${name4.toLowerCase()}.png`;
+                            imageElement.src = './image/V.png';
                             found4 = true;
                             elapsedTime += 1000;
                         }
                         else if (predictedClassName === name4) {
-                            imageElement.src = `./image/${name4.toLowerCase()}.png`;
+                            imageElement.src = './image/V.png';
                             resultMessage.innerText = 'Hãy giữ động tác trong khoảng 5 giây!';
                             elapsedTime += 100;
                         }
@@ -308,7 +308,7 @@
                         elapsedTime += 50;
                         resultContainer.style.backgroundColor = '#008080'; // Màu nền xanh dương đậm
                         resultMessage.innerText = 'Chính xác! Đây là ký hiệu giơ tay hình chữ V';
-                        imageElement.src = `./image/${name4.toLowerCase()}.png`;
+                        imageElement.src = './image/V.png';
                         if (elapsedTime >= 11000) {
                             elapsedTime = 0;
                         }
